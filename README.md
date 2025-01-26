@@ -6,10 +6,19 @@ A simple Streamlit app template for you to modify!
 
 ### How to run it on your own machine
 
+<!-- 0. Create environment (and activate it)  -->
+
+<!-- ```sh
+conda create --prefix ./venv python=3.12
+conda activate ./venv
+``` -->
+
+
 1. Install the requirements
 
    ```
    $ pip install -r requirements.txt
+   $ pip install st-link-analysis
    ```
 
 2. Run the app
