@@ -28,15 +28,24 @@ elements = {
     # ],
    
   "nodes": [
-    {"data": { "id": 1, "label": "CORE", "name": "data_harmonized" }}, # CAPITAL leters contains ICONS in ./venv/lib/site-packages/stk-analysis/frontend/build/icons..[TOFIX and push]
-    {"data": { "id": 2, "label": "HEALTH", "name":"patients" }},
-    {"data": { "id": 3, "label":"CURES", "name": "physicians" }},
-    {"data": { "id": 4, "label":"PREVENTION", "name": "institutions" }},
-    {"data": { "id": 5, "label":"PREVENTION", "name": "trial_registries" }},
-    {"data": { "id": 6, "label":"CURES", "name": "pharmacy" }},
-    {"data": { "id": 7, "label":"FINANCIAL", "name": "countries" }},
-    {"data": { "id": 8, "label":"FINANCIAL", "name": "claims" }},
-    {"data": { "id": 9, "label":"HEALTH", "name": "labbiomarkers" }},
+    # {"data": { "id": 1, "label": "CORE", "name": "data_harmonized" }}, # CAPITAL leters contains ICONS in ./venv/lib/site-packages/stk-analysis/frontend/build/icons..[TOFIX and push]
+    # {"data": { "id": 2, "label": "HEALTH", "name":"patients" }},
+    # {"data": { "id": 3, "label":"CURES", "name": "physicians" }},
+    # {"data": { "id": 4, "label":"PREVENTION", "name": "institutions" }},
+    # {"data": { "id": 5, "label":"PREVENTION", "name": "trial_registries" }},
+    # {"data": { "id": 6, "label":"CURES", "name": "pharmacy" }},
+    # {"data": { "id": 7, "label":"FINANCIAL", "name": "countries" }},
+    # {"data": { "id": 8, "label":"FINANCIAL", "name": "claims" }},
+    # {"data": { "id": 9, "label":"HEALTH", "name": "labbiomarkers" }},
+    {"data": { "id": 1, "label": "POST", "name": "data_harmonized" }}, # CAPITAL leters contains ICONS in ./venv/lib/site-packages/stk-analysis/frontend/build/icons..[TOFIX and push]
+    {"data": { "id": 2, "label": "PERSON", "name":"patients" }},
+    {"data": { "id": 3, "label":"POST", "name": "physicians" }},
+    {"data": { "id": 4, "label":"POST", "name": "institutions" }},
+    {"data": { "id": 5, "label":"POST", "name": "trial_registries" }},
+    {"data": { "id": 6, "label":"POST", "name": "pharmacy" }},
+    {"data": { "id": 7, "label":"POST", "name": "countries" }},
+    {"data": { "id": 8, "label":"POST", "name": "claims" }},
+    {"data": { "id": 9, "label":"POST", "name": "labbiomarkers" }},
   ],
   "edges": [
     {"data": { "id": 10, "label": "INTERACT_WITH",  "source": 1, "target": 2 }},
@@ -59,11 +68,13 @@ elements = {
 
 # Style node & edge groups
 node_styles = [
-    NodeStyle("CORE", "#FF7F3E", "name", "core"),
-    NodeStyle("HEALTH", "#2A629A", "name", "health"),
-    NodeStyle("CURES", "#2A079A", "name", "cures"),
-    NodeStyle("PREVENTION", "#2A620A", "name", "prevention"),
-    NodeStyle("FINANCIAL", "#1A629A", "name", "financial")
+    # NodeStyle("CORE", "#FF7F3E", "name", "core"),
+    # NodeStyle("HEALTH", "#2A629A", "name", "health"),
+    # NodeStyle("CURES", "#2A079A", "name", "cures"),
+    # NodeStyle("PREVENTION", "#2A620A", "name", "prevention"),
+    # NodeStyle("FINANCIAL", "#1A629A", "name", "financial")
+    NodeStyle("PERSON", "#FF7F3E", "name", "person"),
+    NodeStyle("POST", "#2A629A", "content", "description"),
 ]
 
 edge_styles = [
