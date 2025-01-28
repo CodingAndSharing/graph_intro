@@ -28,29 +28,29 @@ elements = {
     # ],
    
   "nodes": [
-    {"data":{ "id": 1, "label":"CORE", "name": "data_harmonized" }},
-    {"data":{ "id": 2, "label": "HEALTH", "name":"patients" }},
-    {"data":{ "id": 3, "label":"CURES", "name": "physicians" }},
-    {"data":{ "id": 4, "label":"PREVENTION", "name": "institutions" }},
-    {"data":{ "id": 5, "label":"PREVENTION", "name": "trial_registries" }},
-    {"data":{ "id": 6, "label":"CURES", "name": "pharmacy" }},
-    {"data":{ "id": 7, "label":"FINANCIAL", "name": "countries" }},
-    {"data":{ "id": 8, "label":"FINANCIAL", "name": "claims" }},
-    {"data":{ "id": 9, "label":"HEALTH", "name": "labbiomarkers" }}
+    {"data": { "id": 1, "label": "CORE", "name": "data_harmonized" }}, # CAPITAL leters contains ICONS in ./venv/lib/site-packages/stk-analysis/frontend/build/icons..[TOFIX and push]
+    {"data": { "id": 2, "label": "HEALTH", "name":"patients" }},
+    {"data": { "id": 3, "label":"CURES", "name": "physicians" }},
+    {"data": { "id": 4, "label":"PREVENTION", "name": "institutions" }},
+    {"data": { "id": 5, "label":"PREVENTION", "name": "trial_registries" }},
+    {"data": { "id": 6, "label":"CURES", "name": "pharmacy" }},
+    {"data": { "id": 7, "label":"FINANCIAL", "name": "countries" }},
+    {"data": { "id": 8, "label":"FINANCIAL", "name": "claims" }},
+    {"data": { "id": 9, "label":"HEALTH", "name": "labbiomarkers" }},
   ],
-  "links": [
-    {"data":{ "id": 10,  "source": 1, "target": 2, "label": "INTERACT_WITH" }},
-    {"data":{  "id": 11, "source": 1, "target": 3, "label": "INTERACT_WITH" }},
-    {"data":{  "id": 12, "source": 1, "target": 4, "label": "INTERACT_WITH" }},
-    {"data":{  "id": 13, "source": 1, "target": 5, "label": "INTERACT_WITH" }},
-    {"data":{  "id": 14, "source": 2, "target": 6, "label": "INTERACT_WITH" }},
-    {"data":{  "id": 15, "source": 3, "target": 6, "label": "INTERACT_WITH" }},
-    {"data":{  "id": 16, "source": 3, "target": 7, "label": "INTERACT_WITH" }},
-    {"data":{ "id": 17,  "source": 5, "target": 7, "label": "INTERACT_WITH" }},
-    {"data":{ "id": 18,  "source": 5, "target": 8, "label": "INTERACT_WITH" }},
-    {"data":{ "id": 19,  "source": 4, "target": 8, "label": "INTERACT_WITH" }},
-    {"data":{ "id": 20,  "source": 4, "target": 9, "label": "INTERACT_WITH" }},
-    {"data":{ "id": 21,  "source": 2, "target": 9, "label": "INTERACT_WITH" }}
+  "edges": [
+    {"data": { "id": 10, "label": "INTERACT_WITH",  "source": 1, "target": 2 }},
+    {"data": {  "id": 11, "label": "INTERACT_WITH", "source": 1, "target": 3}},
+    {"data": {  "id": 12, "label": "INTERACT_WITH", "source": 1, "target": 4 }},
+    {"data": {  "id": 13, "label": "INTERACT_WITH", "source": 1, "target": 5 }},
+    {"data": {  "id": 14, "label": "INTERACT_WITH", "source": 2, "target": 6 }},
+    {"data": {  "id": 15, "label": "INTERACT_WITH", "source": 3, "target": 6 }},
+    {"data": {  "id": 16, "label": "INTERACT_WITH", "source": 3, "target": 7 }},
+    {"data": { "id": 17, "label": "INTERACT_WITH",  "source": 5, "target": 7 }},
+    {"data": { "id": 18, "label": "INTERACT_WITH",  "source": 5, "target": 8 }},
+    {"data": { "id": 19, "label": "INTERACT_WITH",  "source": 4, "target": 8 }},
+    {"data": { "id": 20, "label": "INTERACT_WITH",  "source": 4, "target": 9 }},
+    {"data": { "id": 21, "label": "INTERACT_WITH",  "source": 2, "target": 9 }},
   ]
 
 
@@ -68,7 +68,7 @@ node_styles = [
 
 edge_styles = [
     EdgeStyle("INTERACT_WITH", caption='label', directed=True),
-    # EdgeStyle("INTERACT_WITH", caption='label', directed=True),
+    EdgeStyle("FOLLOWS", caption='label', directed=True),
     # EdgeStyle("INTERACT_WITH", caption='label', directed=True),
 ]
 

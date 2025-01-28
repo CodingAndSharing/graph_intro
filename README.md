@@ -14,9 +14,14 @@ conda activate ./venv
 ``` -->
 
 
-1. Install the requirements
+1. Install the requirements (https://docs.streamlit.io/get-started/installation/command-line)
 
    ```
+   $ python -m venv .venv
+   # windows
+   $.venv\Scripts\activate.bat
+   # linux
+   #source ./.venv/bin/activate
    $ pip install -r requirements.txt
    $ pip install st-link-analysis
    ```
